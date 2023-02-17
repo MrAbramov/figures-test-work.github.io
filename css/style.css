@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/********************
+*Start: Default Styles
+********************/
+.input-default,
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-default {
+  background: #333;
+  color: #fff;
+}
+
+.input-default {
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+
+.not-highlight {
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+/********************
+*End: Default Styles
+********************/
+
+/********************
+*Start: Control Panel
+********************/
+
+.section-header {
+  position: fixed;
+  width: max-content;
+  top: 0;
+  right: 0;
+}
+
+.control-panel {
+  display: flex;
+  align-items: center;
+  gap: 30px; 
+  background: whitesmoke;
+  padding: 15px;
+  border-radius: 0 0 0 8px;
+}
+
+/********************
+*End: Control Panel
+********************/
+
+/********************
+*Start: History Panel
+********************/
+
+.history-panel {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  max-width: max-content;
+  max-height: 300px;
+  width: 100%;
+  border-radius: 0 8px 0 0;
+  background: whitesmoke;
+  overflow-y: auto;
+}
+
+.history-panel li {
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.history-panel li:last-child {
+  border: 0;
+}
+
+.history-panel .title {
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.history-panel .btn-default {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/********************
+*End: History Panel
+********************/

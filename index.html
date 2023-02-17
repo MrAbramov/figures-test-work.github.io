@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header class="section-header">
+    <form class="control-panel" id="control-panel">
+      <select class="input-default" name="figure">
+        <option value="cube" selected>Cube</option>
+        <option value="sphere" >Sphere</option>
+        <option value="pyramid">Pyramid</option>
+      </select>
+
+      <input class="scale-input input-default" name="scale" min="0" max="100" type="number" placeholder="Scale">
+
+      <button class="btn btn-default input-default" type="submit">Create</button>
+    </form>
+  </header>
+
+  <ul class="history-panel" id="history-panel"></ul>
+  
+  <script src="libs/three.js"></script>
+  <script src="libs/OrbitControls.js"></script>
+  <script src="js/figureController.js"></script>
+  <script src="js/Figures/Cube.js"></script>
+  <script src="js/Figures/Triangle.js"></script>
+  <script src="js/Figures/Sphere.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/threeInnit.js"></script>
+</body>
+</html>
